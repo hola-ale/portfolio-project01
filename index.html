@@ -34,9 +34,7 @@
     </div>
     <header>
         <div class="header-text" data-aos="flip-left" data-aos-delay="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
+    
         data-aos-once="true">
             <h1 class="slogan">Optimise your business with us</h1>
             <a href="#main">
@@ -45,23 +43,25 @@
         </div>
     </header>
    
-    <h1 class="main-title"><span id="main"></span>What we can offer you?</h1>
+    <h1 class="main-title">
+        <span id="main"></span>What we can offer you?
+    </h1>
     <section class="main">
-        <div class="card card-img-on-left" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <div class="card card-img-on-left" data-aos="fade-up">
             <img class="card-img card-img01" src="./images/optimise.jpg" alt="image of us optimising your company">
             <div class="card-description">
                 <h2>We will help you optimise your processes</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
         </div>
-        <div class="card card-img-on-right" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <div class="card card-img-on-right" data-aos="fade-up">
             <img class="card-img card-img02" src="./images/windmill.jpg" alt="image of going green with your business">
             <div class="card-description">
                 <h2>We will help you make your business greener</h2>
                 <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
             </div>
         </div>
-        <div class="card card-img-on-left" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <div class="card card-img-on-left" data-aos="fade-up">
             <img class="card-img card-img03" src="./images/costs.jpg" alt="image of us cutting your costs">
             <div class="card-description">
                 <h2>We will help you save costs</h2>
@@ -70,10 +70,12 @@
         </div>
     </section >
     <section class="sub-main">
-        <h1 class="sub-main-title"><span id="sub-main"></span>Who are we?</h1>
+        <h1 class="sub-main-title">
+            <span id="sub-main"></span>Who are we?
+        </h1>
         <div class="about-us">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="slider">
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="slider" data-aos="fade-up">
                 <div class="slider-inner snaps-inline">
                     <div class="employee-card">
                         <img src="./images/teammembers/yunming-wang-G9f4Enb8XVM-unsplash-1.jpg" alt="" class="employee-card-img">
@@ -111,8 +113,10 @@
             </div>
         </div>
     </section>
-    <h1 class="contact-title"><span id="contact"></span>Contact us</h1>
-    <section class="contact">
+    <h1 class="contact-title">
+        <span id="contact"></span>Contact us
+    </h1>
+    <section class="contact" data-aos="fade-up">
         <div class="contact-details">
             <img class="contact-img" src="./images/zuri.jpg" alt="Picture of Zürich">
             <div class="contact-details-description">
@@ -137,7 +141,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        
+        offset: 20,
+        duration: 1000,
+        once: true,
+        easing: 'ease-in'
       });
     </script>
 </body>

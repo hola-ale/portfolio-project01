@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -311,7 +315,7 @@ footer p {
 
 .employee-card-name {
     margin: .5em 0 1em 0;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 ::-webkit-scrollbar{
@@ -378,15 +382,24 @@ footer p {
 
 .input-name {
     width: 45%;
+    color: white;
+    background: rgba(131,58,180,.1);
+    border: .2em solid rgba(131,58,180,.2);
 }
 
 .input-email {
     width: 100%;
+    color: white;
+    background: rgba(131,58,180,.1);
+    border: .2em solid rgba(131,58,180,.2);
 }
 
 .input-message {
     width: 100%;
     height: 20vh;
+    color: white;
+    background: rgba(131,58,180,.1);
+    border: .2em solid rgba(131,58,180,.2);
 }
 
 .btn-submit {
@@ -411,9 +424,7 @@ footer p {
     .header-text {
         top: 30%;
     }
-    .navbar {
-        padding-top: 2em;
-    }
+
     .hamburger {
         display: none;
     }
@@ -490,7 +501,7 @@ footer p {
 
 @media (min-width: 1024px) {
     .navbar {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         flex-wrap: nowrap;
     }
     .logo {
@@ -499,28 +510,30 @@ footer p {
     }
     .header-text {
         top: 35%;
-        left: 4em;
-        padding-right: 4em;
+        left: 2.5em;
+        padding-right: 2.5em;
     }
     .header-text h1 {
         font-size: 3rem;
     }
     .header-text .btn {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
-    .main-title span,
-    .sub-main-title span {
-        top: -125px;
+
+    .slider-inner {
+        grid-auto-columns: 21%;
     }
-    
 }
 
 @media (min-width: 1440px) {
     
     .navbar {
-        padding: 2em 4em;
+        padding-inline: 4em;
     }
-
+    .header-text {
+        left: 5em;
+        padding-right: 5em;
+    }
     .main {
         padding: 0 4em;
     }
@@ -530,11 +543,12 @@ footer p {
     .card-description {
         width: 56%;
     }
-
+    
     .sub-main {
         padding: 2em 4em;
     }
     .slider-inner {
         grid-auto-columns: 20%;
     }
+    
 }

@@ -1,4 +1,3 @@
-const navbar = document.querySelector("div.navbar");
 function debounce(method, delay) {
     console.log("deboune")
     clearTimeout(method._tId);
@@ -6,7 +5,13 @@ function debounce(method, delay) {
         method();
     }, delay);
 }
+window.onscroll = function () {debounce(handleNavbar, 50);}
 
+const navbar = document.querySelector("div.navbar");
+const hamburger = document.querySelector("div.hamburger");
+const navLinks = document.querySelector("ul.navbar-links-list");
+const menuIcon = document.getElementById("hamburger");
+const closeIcon = document.getElementById("cancel-white");
 function handleNavbar(){
     console.log("onScroll")
     let top = window.scrollY;
@@ -16,14 +21,6 @@ function handleNavbar(){
         navbar.classList.remove("active-scroll")
     }
 }
-
-window.onscroll = function () {debounce(handleNavbar, 200);}
-
-const hamburger = document.querySelector("div.hamburger");
-const navLinks = document.querySelector("ul.navbar-links-list");
-const menuIcon = document.getElementById("hamburger");
-const closeIcon = document.getElementById("cancel-white");
-
 hamburger.addEventListener("click", function() {
     if (navLinks.classList.contains("active-hamburger")) {
         closeMenu()
@@ -34,7 +31,6 @@ hamburger.addEventListener("click", function() {
         menuIcon.style.display = "none";
       }
 })
-
 function closeMenu() {
     navLinks.classList.remove("active-hamburger");
     closeIcon.style.display = "none";
