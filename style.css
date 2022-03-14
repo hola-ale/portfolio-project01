@@ -73,14 +73,37 @@ footer {
     position: relative;
 }
 
-footer p {
+footer .acknowledgement {
     font-size: .8rem;
     color: white;
     position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-left: -43px;
+    top: 50%;
+    left: 15%;
+    right: 15%;
 }
+footer .acknowledgement a {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+footer .author {
+    font-size: .8rem;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-left: -120px;
+}
+footer .author a {
+    color: rgba(221,145,192,1);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+footer a:hover,
+footer a:focus {
+    color: rgb(245, 60, 135);
+}
+
 
 /* ------------------ NAVBAR ------------------ */
 .navbar {
@@ -494,6 +517,12 @@ footer p {
     }
     .input-name {
         width: 100%;
+    }
+    footer .acknowledgement {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-left: -270px;
     }
 }
 
